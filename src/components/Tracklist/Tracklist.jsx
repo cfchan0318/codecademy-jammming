@@ -1,10 +1,12 @@
 import React from "react";
 import Track from "../Track/Track";
 
-const Tracklist = (props) => {
+const Tracklist = ({tracks=[]}) => {
     return (
         <div className="track-list">
-            <Track/>
+            {tracks.map((track,i) => (
+                <Track key={i} name={track.name} artist={track.artist} album={track.album}/>
+            ))}
         </div>
     )
 }
