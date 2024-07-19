@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  min-height:60px;
+  height: 5%;
+  background-color: #2d3250;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appName {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.appNameHighlight {
+  color: #f9b17a;
+}

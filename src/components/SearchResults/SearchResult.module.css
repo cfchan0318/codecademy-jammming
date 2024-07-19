@@ -1,0 +1,15 @@
+.searchResult{
+    width:45%;
+    height: 60vh;
+    background-color: #2d3250;
+    color: #ffffff;
+    border-radius:5px;
+    padding:10px;
+    
+}
+
+.title{
+    color: #ffffff;
+    margin:0;
+    margin-bottom:10px;
+}

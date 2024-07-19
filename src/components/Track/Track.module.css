@@ -1,0 +1,35 @@
+.track {
+  min-height: 5vh;
+  background-color: #676f9d;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items:center;
+  border-radius: 5px;
+}
+
+.trackTitle{
+    font-size:18px;
+    margin-left: 10px;
+    
+}
+
+.trackArtist{
+    padding-top:5px;
+    font-size:12px;
+    margin-left: 10px;
+}
+
+.trackButton{
+  background-color:rgba(0,0,0,0);
+  border:none;
+  font-size:30px;
+  color:#ffffff;
+}
+
+.trackButton:hover{
+  background-color:rgba(0,0,0,0);
+  border:none;
+  font-size:35px;
+  cursor:pointer
+}
