@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './Track.module.css'
 
-const Track = ({name, artist, album}) => {
+const Track = ({name, artist, album, btnContent, handleBtnOnClick}) => {
     return (
         <div className={styles.track}>
             <div style={{flex:3}}>
@@ -9,8 +9,7 @@ const Track = ({name, artist, album}) => {
                 <div className={styles.trackArtist}>{artist} | {album}</div>
             </div>
             <div style={{flex:1, display:'flex',alignItems:'center',justifyContent:'center'}}>
-                <button className={styles.trackButton}>+</button>
-                
+                <button onClick={handleBtnOnClick} className={styles.trackButton}>{btnContent}</button>
             </div>
         </div>
     )

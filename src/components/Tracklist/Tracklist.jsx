@@ -1,11 +1,18 @@
 import React from "react";
 import Track from "../Track/Track";
 
-const Tracklist = ({tracks=[]}) => {
+const Tracklist = ({tracks=[], btnContent, handleBtnOnClick}) => {
     return (
         <div className="track-list">
             {tracks.map((track,i) => (
-                <Track key={i} name={track.name} artist={track.artist} album={track.album}/>
+                <Track
+                    key={track.id}
+                    name={track.name}
+                    artist={track.artist}
+                    album={track.album}
+                    btnContent={btnContent}
+                    handleBtnOnClick={() =>handleBtnOnClick(track.id)}
+                />
             ))}
         </div>
     )
