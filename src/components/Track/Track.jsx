@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from './Track.module.css'
 
 const Track = ({name, artist, album, btnContent, handleBtnOnClick}) => {

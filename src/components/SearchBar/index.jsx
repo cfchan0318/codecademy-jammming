@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './SearchBar.module.css';
 
-const SearchBar = (props) => {
+const SearchBar = ({handleOnClick}) => {
   const [title, setTitle] = useState("");
 
   const handleOnChange = (e) => {
@@ -10,15 +10,12 @@ const SearchBar = (props) => {
 
   return (
     <div className={styles.searchBar}>
-      <form>
         <div>
           <input className={styles.searchInput} type="text" value={title} onChange={handleOnChange} />
         </div>
         <div style={{display:'flex', justifyContent:'center'}}>
-          <button className={styles.searchButton}>Search</button>
+          <button onClick={() =>handleOnClick(title)} className={styles.searchButton}>Search</button>
         </div>
-        
-      </form>
     </div>
   );
 };
